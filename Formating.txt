@@ -6,8 +6,8 @@ Intro :
 
   A Formated code looks like a work of a professional 
 
- To make a Formated code we should follow a set of rules and consistantly apply them 
- If we are working on a Team all members should follow a single set of rules
+  To make a Formated code we should follow a set of rules and consistantly apply them 
+  If we are working on a Team all members should follow a single set of rules
 
 Purpose of Formatting :
 
@@ -30,12 +30,92 @@ Vertical Oppeness between concept :
 
  Make sure to give a empty verical space after a concept in a coded 
 
-Verical density : vertical spaces is not allowed for same concept x
+Verical density : 
 
-Veeticacl distance : Same concept or consequtive consept must not be seperated in file or 
+ vertical spaces is not allowed for same concept 
+
+Veeticacl distance :
+
+ Same concept or consequtive consept must not be seperated in file or 
  class unless specific reason 
 
-Vartical declaration must be nearr to code
+Vartical declaration :
 
-Instance variable ,all instant variable should be declared on top of the class 
+ It must be near to code
+
+Instance variable : 
+
+ All instant variable should be declared on top of the class 
+
+Dependent Functions.
+
+    If one function calls another, they should be vertically close,
+    and the caller should be above the callee, if at all possible. 
+    This gives the program a natural flow. If the convention is followed reliably, 
+    readers will be able to trust that function definitions will follow shortly 
+    after their use
+
+Conceptual Affinity:
+
+    Certain bits of code want
+    to be near other bits. They have a certain
+    conceptual affinity. The stronger that affinity, the
+    less vertical distance there should be between
+    them.
+
+Vertical Ordering:
+
+     A function that is being called should be below  the function that calls it .
+
+Horizontal Formating:
+     We should always tryto keep our lines short.
+
+Horizontal Openness and density: 
+    We use horizontal white space to associate things that are strongly related and disassociate
+    things that are more weakly related.
+
+Horizontal Alignment:
+
+ Int    x = 10
+ string y = 20 
+
+ The above alignment is the worst as to sometime fail to tell the intent of the code so do
+ not make an Aligment like this it is better as below 
+
+ int x=10
+ string y=20
+
+Indentation : 
+  
+ It is the important in formating on how we indent a code 
+
+methods of a class are one level right to it like wise statements conditiion vs statement task 
+without a good indentition a program won't be of much readable and understandable .
+
+Breaking Indention :
+
+    It is always necessarry to know where to break the indention ina program 
+
+    Eg : def add(){sum=x+y} is better  used as below
+ 
+    def add():
+      {
+        sum x+y
+      }
+Dummy Scope :
+    Sometimes the body of a while or for statement is a dummy, as shown below. 
+    I don’t like these kinds of structures and try to avoid them
+
+    eg :while (dis.read(buf, 0, readBufferSize) != -1) 
+        ;
+
+Team Rules :
+
+    A team of developers should agree
+    upon a single formatting style, and then
+    every member of that team should use
+    that style. We want the software to have a
+    consistent style. We don’t want it to appear 
+    to have been written by a bunch of disagreeing
+    individuals.
 

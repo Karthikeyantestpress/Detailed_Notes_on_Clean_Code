@@ -1,0 +1,115 @@
+Explainyourself in code :
+
+  Always try to express in a code in first place use comments only if not explainable in the 
+  code .
+
+Good Comments :
+
+   The good comment is a comment that we find a way not to write  
+
+Legal comments :
+
+ Comments for copyrights 
+
+Informative comments :
+
+ If a comment can be  named as a function Nmme choose that instead of adding comments 
+ If we can create a class to intent the content for the code instead of comments
+
+Explaining the intent :
+
+ Reason for why we does  this in a code 
+
+Clarification :
+
+ To Clarify the part of code 
+
+  eg : asserttrue a compare b ==1  //a>b
+
+Warning of Consequences :
+
+We can use comments to warn other programmer and the self
+
+ToDO comments 
+
+They are the jobs that the programmer things to be done but cannot be done at this moments 
+
+Amplification :
+
+It is the comment used to mention the important of some that may otherwise affect the code 
+
+
+Java Docs public API :
+
+Commenting in public API is much important to know about it  
+
+Bad Comment :
+
+commenting due to poor code 
+insuficient commennt for justifacation 
+
+
+Mumbling :
+
+If a comment makes us to vieww other module to under stand it then it is a bad comment 
+
+Redundant comment :
+
+A comment that does not inform us anything othere than the code itself 
+
+Misleading Comments :
+
+ Comments that changes the intention is a bad misleading comments 
+
+Mandated comments :
+
+Compiulsory is worst 
+
+Journel comments 
+
+Journel log
+
+Noisy comments :
+
+A comments that restate the obvious but does nothing 
+
+Scary Noise :
+
+A comment that is useless and mislead is a scarry comment 
+
+Do not use the comment  when you can express them in a variable or fumnction 
+
+Position Markers :
+
+  Position marking is not significant  
+
+Closing Brace  :
+
+Unwanted comments to ensure the closed brace
+
+Attributing and Bylines :
+
+We have many source code to show who worked on it so commneting it in code is not a good practice 
+
+Commented -out -code :
+
+HTML commant is abomination :
+
+Non -Local information : the comments that is not for the surrounding part  of  the code is  
+non local infomative comments
+Too much information : is bad comment 
+
+
+Inobvious comments : misleading or non informative comment 
+
+Javadocs in Non-pubilic code :
+
+
+
+
+
+
+
+
+
+
