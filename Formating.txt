@@ -1,0 +1,41 @@
+Intro :
+
+  An unformatted code without any attention to details is like a Druken sailer 
+
+  So a Code should be in a Good format so that it can be understood  by team members
+
+  A Formated code looks like a work of a professional 
+
+ To make a Formated code we should follow a set of rules and consistantly apply them 
+ If we are working on a Team all members should follow a single set of rules
+
+Purpose of Formatting :
+
+  Code formatting is all about communication 
+  Communication is the professional developers first order of rules 
+  Functionality can be updated in next release for that the code should be
+  readable and modifyable that is the main purpose of  formatting .
+
+Vetrical Formatting :
+
+ Source file size matter in the veritcal Formatting
+ Small sized file are al
+
+Newspaper Metophor :
+
+ A code must be like a newpaper reading with headling then summary then synopsys of the story 
+ then detailing it more it goes down more the detail it is 
+
+Vertical Oppeness between concept :  
+
+ Make sure to give a empty verical space after a concept in a coded 
+
+Verical density : vertical spaces is not allowed for same concept x
+
+Veeticacl distance : Same concept or consequtive consept must not be seperated in file or 
+ class unless specific reason 
+
+Vartical declaration must be nearr to code
+
+Instance variable ,all instant variable should be declared on top of the class 
+
