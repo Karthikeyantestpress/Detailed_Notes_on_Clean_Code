@@ -1,0 +1,191 @@
+Intro :
+
+  In early days  of programming there was routines subroutines
+  Then programs subprograms and functions 
+
+  now functions plays the major role in programming and it is important 
+  to write a better function .
+
+Small 
+
+    The first rule of a function is small 
+    smaller the function is easier to understanding it and bug free
+    Also Each function should tell a story and in a conseruence order
+
+Blocks and Indenting :
+
+   A function with statements such as if should be only one or two lines
+   and  if it is  a function call it is much better 
+
+   This makes the function easy to read and understand
+
+Do One thing :
+
+   A function must do only one thing and must do it well if a function does more then one 
+   we must split the funtcion 
+
+   Doing one thing is one level of abstraction 
+
+   eg : To check the pass mark of student 
+
+   We get the mark 
+   if it is above 40
+   we return  pass 
+
+   but the intention is to get the pass mark of the student which it does 
+
+Section within function :
+
+  Separating a section within a function is a bad idea as it again does multiple tasks 
+
+  eg if we section decleration ,initializaztion in afunction it does two task
+  so we must not do it as function always does one thing 
+
+One level of abstraction per function 
+
+  In order to make sure function does "One thing "we must also make sure that the 
+  statement within a function does only one level of abstraction 
+
+
+Read from Top to Bottom :
+
+   We want function to be in consequtive order in next level of abstraction 
+   so that it can be easily understandable and modifyable by the reader 
+
+Switch statement :
+    
+    Do not prefer to use switch statements in a function as it does more than one 
+    thing
+
+    if so in unavoidable cases make sure the switch statement is inherted and burried in 
+    an low level of class and never repeated this can be acheiverd by polymorphism 
+
+    hiding the switch stament in an interface so that it does not grow implicitly
+
+
+Use Descriptive Names :
+
+   Take time and make sure  to use a descriptive names in a function so that the intention 
+   can be understood easily 
+
+   A long descriptive function name is  better  than a long descriptive comment
+ 
+
+Function Arguments 
+
+    Argyments types 
+
+    Niladic -0
+    Monadic -1
+    Diadic  -2
+    Triadic -3
+
+    Most prefered Niladic and Mondic 
+    Not prefered more than Triadic 
+     
+ Reason
+   
+   Hard for Testing 
+   
+Output Arguments :
+
+   They are harder to understand than the input argument 
+   As we usually return the value  in return method and passing them as an argument makes us 
+   to double check them 
+
+   Eg : append footer (s) :does s is input or output this can be only clarified by checking 
+   initialization of function which is a ddouble check .
+
+   Here comes the Object Oriented  to pass the args
+
+One input Argument :
+
+  Next Best Arguments to none is one argument 
+
+Common Monadic form
+
+  There are two reason to pass single arguments in a function
+  We can pass single argument to check for the existance of a file 
+  We can pass an input argument and modify them as perou need and return them 
+  Transfomation should have a return value 
+
+Flag Arguments :
+
+ Flag arguments will fail the task of do one thing so never pass boolean as an argument
+
+Dyadic Args :
+
+ Hard for Test 
+ We may skip to check an arguments which leads to hide a bug  
+ Best place to use dyadic args are caeristian pointers
+    
+    eg :point =poinyt(0,0)
+
+Triads args :
+
+ Harder than Dyadic and be much careful if we are to use them 
+
+
+Arguments Objects :
+
+ If we want to use two or more argument we can better wrap them into classes 
+
+
+Argument List :
+
+ We can use String.format method to pass an argument as a list 
+
+Verbs and Keywords :
+
+  We can better use verbs in method such as writefield(name)
+
+  Also assertexpectedequalsactual(expectedd ,actual) is much better 
+
+Have No Side effect :
+
+ A method should always do one thing and not have any side effect 
+
+ Eg : check password validation 
+  
+Command and Query Seperation :
+
+  If set("username","Uncle bob")
+
+
+  if (attributeexist(username )
+    Set ("username","Uncle bob") is  better by seperating information and modification
+
+Prefer exception to return  Error code 
+
+  If we handle the errors in a code it can be easy to seperate happy code and cann  be simplified
+
+Try/catch block :
+
+  As they are complicated it is better to use them in a seperate methods 
+
+Error shpuld handle one thing 
+
+  It should do only one task and not more than that 
+
+Error in java dependency mangnet
+   
+   Exception handling is much better than an error handling as we donot need to reconstruct 
+   errors in Exception handling 
+
+Don't repeat yourself :
+
+  Do not make duplicates in code
+  As it takes modification complicated if we are to change 
+  And more erroes if there is error in code
+  The main readon for base clss in OOPS is also to avoid duplicates
+
+Structured Programming :
+  Djikstras says every functions and blocks between a functions should have one entry 
+  and one exit 
+  There should be only one return in a function and no break and continue and never goto
+  statement in a function 
+
+How to write a function ?
+
+  Refactor with this rules and also should follow the tests simultaneously
+
