@@ -1,0 +1,150 @@
+Intro :
+
+  Names are everywhere in a program we use Names in variables ,Methods,Classes
+  even Files ,Directories .
+
+  So making a Meaningful Name is one of the most important way to achieve a Clean Code
+
+Use_Intent_Reveing Names :
+
+  A Name must reaveal its intention without intention it cannnot be a meaningful name 
+
+   eg : Int d ;//Daysinweek
+    
+    Here we cound not able to know the meaning of d as there is no intention in it 
+
+    so we can Name it as  int Daysinweek which now gives the intention in its name 
+
+    Eg :If we are working on a app for minesweeper game we can name as below 
+
+    Name of the Board : Gameboard
+    Each boxes in a Board be : ArrayList 
+    flagged area be ; isFlagged  
+
+Avoid Disinformation :
+
+  We must avoid giving false information to Name 
+
+  Eg if we Name "Hypotenous" as Hp reader could not able to know the information of it with it
+  and the worst part is they may even thing it as a Hp brand name which is disifnirmative 
+
+  So we can better name it as a Hypotenous to avoid disinformation in it 
+
+Use Meaningful Distinction :
+
+  If we are Distincting some thing we must make it meaning ful 
+
+  eg if we use Product ,Productinfo and Productdata as a name in a code all three 
+  mostly are same and are not distinct in any manner and the reader will not able 
+  to understand its intent so make sure the distinction is not same 
+
+  Distinguish names in such a way that the reader knows what the differences offer
+
+Pronouncable names :
+
+  Make sure the name is pronunciable if it is not wee cannot read or discuss with the 
+  team without sounding like an idiot 
+
+Searchable Names 
+
+  Single-letter names and numeric constants have a particular problem in that they are not
+  easy to locate across a body of text.
+
+  So make sure the name provided is descriptive and searchable way 
+
+  Eg : MAX_CLASSES_PER_STUDENT,
+
+Avoid Encoding :
+
+ If a Name is Encoded only those  who knows encoding can grasp them and it is hard for the 
+ others to understand it and we may make a typo error in it so never Encode a Name 
+
+Hungarian Notation :
+
+    In olderndays coders used to mention the first letter of data type in names but now 
+    the complier itself remembers the data type so never mention it in a names
+
+Member Prefix
+
+   Like wise in oldern daays people use M_ in the Name of members but now there are many 
+   sources that can differentiate the members in a code so never use this  in a name 
+
+Interface and Implementation :
+
+  if we are using an "Abstract Factory" with interface never use I in the Names better go with 
+  implementation in Names
+
+  Eg :ShapeFactoryImp 
+
+Avoid Mental Mapping :
+
+  Just because  a and b are used naming c as a variable is a mental mapping 
+  never do that 
+
+  Avoid using a  single letter to name as it does not provide any meaning in it 
+
+Class Names :
+
+  A Class Name must be always noun or noun phrases such as people ,place or things 
+ 
+   Eg : Customer ,Wikipage ,Accountparser
+
+Method name :
+
+  A Method Name should be always verb or verbphrases 
+
+  eg :works,run,deletepage 
+
+Don't Be so Cute :
+
+  If a Name is kept for a humour only the people knows that humour can underrstand the name 
+  and mane ever mislead
+
+  so do not keep a humorus names
+
+
+Pick one word per concept :
+
+  Using word fetch ,retrieve and get for same concept is a worst idea and confuses us a lot 
+  so make sure to use one word per concept 
+
+Dont pun :
+
+  Do not give same name for 2 different things 
+
+Use Solution Domain Names
+
+ Use solution domains names such as pattern names ,math terms and algorithm names 
+
+ Eg: AccountVisitor : here the Visitor is a pattern name 
+
+Use Problem domain Names :
+
+  For problme solving area use problem domine names 
+
+  eg : solving the crackissue while running a page 
+
+  name be like :Fix_CracK_issue 
+
+Add Meaningful Context :
+
+  if we are naming for address we can name like 
+
+   Address.Street
+   Address_floor 
+
+   with a meaaningful context 
+
+Do not Add Gratituous Context :
+
+  if we are working on Testpress app and Naming like testpress_app1
+  testpress_app2 it is of no reason so do not mention like this 
+
+Final Words :
+
+ It takes time and skill to make a good  name 
+ there is aways a name better than this 
+ so keep upateing the better names 
+
+
+
