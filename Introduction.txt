@@ -1,0 +1,250 @@
+Intro :
+
+    This book is for the Programmer and to become a better Programmer .
+    This book is filled with code in every different perspective .
+    This book helps us to know about the good code and bad code .
+    This books helps us to convert a bad code into a good code .
+
+There will be Code(Code Never gets completely automated) :
+
+    We may thing that codes will be automated in future and that we can generate it from 
+    specifications , and might not have use for a programmer to code in future but thats 
+    not true .
+    Code is all about customer needs and requirements 
+    Customer requirements changes in time and machine cannot automatically know the 
+    needs of customer 
+    So there will be always a code 
+
+Bad Code (Impact of a bad code) :
+
+   There was a popular killer app in 80's that got completely shut dowmn due to bad code
+   Reason :Bugs were not fixed in the releases and added more features in the code in next 
+   updates which at one point made the app more messy and unfixable at that point 
+
+   It was the bad code that brought the company down.
+
+   This is the impact of bad code
+
+   we must keep cleaning the mess in code in time to avoid such circumstances 
+
+
+Total Cost of Owning a Mess (Consequence of a bad code) :
+
+  A bad code not only slows down a coder but also the developing team behind it>
+  This leads to dedcrease in productivity and increase in work pressure.
+
+The Grand Redesign in a Sky (Consequence of a bad code):
+
+  As a solution for it we tend to ask for a redesign to start from scratch 
+  but it takes more time to bring out the old design in a code without mess 
+  (maybe 10 years or even more) by then new team member joins and again sees
+  the mess in the code and ask for a redesign.
+
+  So a mess in a code affect our professional surivival as a programmer 
+
+Attitude :
+
+  As doctor is responsible for the patient as he is the only one that knows more
+  than a patient that what is good for him we are the author of our own code and 
+  we are the only responsible for our codes (Do not blame on others ) so it is our 
+  responsibility to make a clean code even it takes some extra time 
+
+Primal Conundrum (Confused state) :
+
+  We all rush to finish a code to reach the deadline in time with mess in it 
+  as a result of it we fail to reach this deadline due to the same mess .
+
+  So only way to reach deadline is to make a clean code without any mess in it 
+
+The Art of Clean Code ?
+
+  If we see a painting we can know if it is a good or bad paint by seeing them but can 
+  we make the paint good without the "painting sense" ofcouse not .
+
+  Like wise a person "without code sense " can differentiate good and bad code 
+  But only the person with "code sense " can see the variations and options in it .
+
+What is a Clean Code?(efining Clean Code ):
+
+ Lets view the perspective of Clean code by some programming experts 
+
+Bjarne Stroustrup,about clean code (Inventor of C++)
+
+    "I like my code to be elegant and efficient. The
+    logic should be straightforward to make it hard
+    for bugs to hide, the dependencies minimal to
+    ease maintenance, error handling complete
+    according to an articulated strategy, and performance
+    close to optimal so as not to tempt
+    people to make the code messy with unprincipled optimizations. 
+    Clean code does one thing well."
+
+    He uses the word "Elegant" so a clean Code must be pleasent and graceful which is 
+    for the reader of the code it must be pleasent like w well played music concern.
+
+    He uses the word "Effecient" so a clean code must be effecient is all the ways such as
+    as expected,Understandable ,modifyable and maintainable  
+
+    He uses the word "Straigthforward" so the logic of the code should be simple and
+    straight forward so bugs cannot be hidden
+
+    The code must be dependancy minimal which is it must not mostly depend on other  APi's
+    or so that maintaining it becomes easier .
+
+    If it depends much on other when error comes we may not be sure of which causes the error 
+    thata is the reason a code should be less dependency 
+
+    He says "Error handling complete" which is much attention to details in code 
+    So one way for a programming to be deatiled is error handling .
+
+    He says "Temps " as a bad code only make the tempt to grow the mess
+
+    He finalized with Clean code is a code that does one thing well
+
+    So a Good code is a code that does one well.
+
+Grady Booch about Clean Code :
+
+    "Clean code is simple and direct. Clean code
+    reads like well-written prose. Clean code never
+    obscures the designer’s intent but rather is full
+    of crisp abstractions and straightforward lines
+    of control
+
+    Here like Bjarne Grady also says a clean code must be simple (easy to understand for the 
+    readers ) and direct (straight forward so bugs cannot be hidden)
+
+    He also says "Well-written prose" So a Clean code should be like reading lord of ring 
+    books where chacter in it feels real and intence 
+
+    Like wise clean code shoudld expose the tension in the problem to be solved 
+
+    A clean code should never show the intent of the designer only contain what is necessary 
+    in a clear way 
+
+"Big" Dave Thomas about clean Code  :
+
+ 
+    "Clean code can be read, and enhanced by a
+    developer other than its original author. It has
+    unit and acceptance tests. It has meaningful
+    names. It provides one way rather than many
+    ways for doing one thing. It has minimal dependencies, 
+    which are explicitly defined,
+    and provides a clear and minimal API. Code should be
+    literate since depending on the language, not all
+    necessary information can be expressed clearly
+    in code alone."
+
+    A Clean code is a code that not alone the writer but also the developer can read and modify 
+    them and it must be in such a format.
+
+    Here he says it must compelsory have a test cases such as unit testing ,acceptance testing 
+
+    Names such as Method name ,variable Namaes ,Class names should be meaningful
+
+    It provides only one direct way to do one task rather than many ways
+
+    Like Bjarn he saays that it should have a minimal dependancy in it 
+
+    Code should be human readable and understandable form
+
+Michael feathers about Clean Code :
+
+       " I could list all of the qualities that I notice in
+        clean code, but there is one overarching quality
+        that leads to all of them. Clean code always
+        looks like it was written by someone who cares.
+        There is nothing obvious that you can do to
+        make it better. All of those things were thought
+        about by the code’s author, and if you try to
+        imagine improvements, you’re led back to
+        where you are, sitting in appreciation of the
+        code someone left for you—code left by someone
+        who cares deeply about the craft"
+
+        A Clean Code is a code that is written in a care 
+        So a clean code should do exactly what is expected
+
+Ron Jeffries about Clean Code :
+
+         • Runs all the tests;
+         • Contains no duplication;
+         • Expresses all the design ideas that are in the 
+           system;
+         • Minimizes the number of entities such as classes,
+           methods, functions, and the like.
+
+           Rons main focus is no duplicate so a clean code is a code that 
+           mainluy do not have any duplicate in it .
+
+Ward Cunningham about Clean Code:
+
+        "You know you are working on clean code when each
+        routine you read turns out to be pretty much what
+        you expected. You can call it beautiful code when
+        the code also makes it look like the language was
+        made for the problem."
+
+        Here a Clean code is a code that does what is expected exactly not more not less
+        like Michael 
+
+        It is not the language that makes programs appear simple. It is the programmer
+        that make the language appear simple
+
+        So a  Clean Code is a  code that shows tha progaram in simple direct and as expected 
+
+"Uncle Bob" about clean code 
+
+      Martial arts people usually do not agree about the best martial arts or best 
+      techique they keep learning and tend to keep imporving which can be achieved by 
+      constant practice 
+
+      Like wise a clean code can be achieved only by a  constant practice 
+
+
+We Are Authors :
+
+      We are the Author of our code and only the readers sees the effect in it and judges it
+      so it must be in a good readable and understandable way 
+
+
+      A code is written once read many times so it is much important that the code is 
+      readable in all perspective 
+
+      So if we want a code to be easy to write we must make sure that the code is easy to read
+
+The Boy Scout Rule :
+
+     "Leave the campground cleaner than you found it."
+
+      A clean code is a code that always is being updated for betterment 
+      Writting a code well is alone not enough it is required to make sure 
+      that the code is cleaned and maintenaned over time .
+
+Conclusion :
+
+    A Clean Code can teach us the way of writing a Clean code but practce is the only way is to 
+    acheive it.
+
+
+
+Notes :
+
+  A Clean Code is a code that has the below
+
+  Simple to read with Meaningful Names 
+  Staright forward to understand and implement
+  Testing performed 
+  No Duplicates in it 
+  Upated and Maintained overtime 
+  result is as expected 
+  Dependency Minimal 
+  Does only one thing and does it well
+
+
+
+
+
+
+
