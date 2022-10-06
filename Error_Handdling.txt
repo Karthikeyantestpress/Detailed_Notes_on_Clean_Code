@@ -1,0 +1,37 @@
+Intro :
+
+    This Chapter is about techniques and consideration on how to write a code both clean and 
+    handle the error without changing its logic.
+
+Use exceptions rather than error code :
+
+    Always prefer to use erro handling usig try/catch block instead of an error code as we should 
+    check for the error after calling it in error code and we may forget once so better go to 
+    error handling it also separates the good code from the error code .
+
+Write try catch final statement first :
+
+    If we feel that our code may get an error at some possiblitity we can add it in the try block 
+    followed by catch block so that the program does not get terminated due to exception and also 
+    we can refactor our code as per the exception
+
+    Try to write tests that force exceptions, and then add behavior to your handler to satisfy 
+    your tests. This will cause you to build the transaction scope of the try block first and
+    will help you maintain the transaction nature of that scope.
+
+Use unchecked Exception :
+
+    It is best to prefer unchecked exception than checked exception as if we throw a checked 
+    exception above three level it is hard to handle them .
+
+Provide Context with exceptions :
+
+    Provide detailed Context Message to the error such as error location error type so that 
+    we can handle them later 
+
+Define Exception classes in terms of caller needs :
+
+We can clarify error by their source 
+if it is by the file or program error or system requirement or a program error
+
+Hower our most important concern should be how they are caught 

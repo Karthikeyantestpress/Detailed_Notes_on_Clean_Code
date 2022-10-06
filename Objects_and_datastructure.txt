@@ -1,0 +1,122 @@
+Intro:
+
+    We use private Variable to secure them and to avoid modifying its implementation but why then 
+    we use getter and setter methods as if making them public 
+
+
+Data Abstraction:
+
+    If we are  protecting a variable make sure not to use getter and setter for it as it 
+    exposes the variable and can be changed
+
+    Not alone that if we are about to hide a data make sure it is in good abstract so that 
+    the user cannot understand its intent 
+
+    Eg : public interface Vehicle {
+         double getPercentFuelRemaining();
+         } is better than that of 
+
+         public interface Vehicle {
+         double getFuelTankCapacityInGallons();
+         double getGallonsOfGasoline();
+         } 
+
+Data/Objects Anti-Symmetry:
+
+    These two examples show the difference between objects and data structures. Objects hide
+    their data behind abstractions and expose functions that operate on that data. 
+    Data structure expose their data and have no meaningful functions.
+
+    We can add new function in Data structure nothing gets affected
+    but on other hand if we add functions in Objects all the implementation gets affected 
+
+    Likewise if we try to add new classes in Dats structure code it get affected 
+    but we can add new classes without changing the existing functions in Objects 
+
+    So if we wan't to add new Data types rather than New functions we can go with the 
+    "Object Oriented ".
+
+    On other hand if we want to add new functions rather than data types we can go with 
+    "Data Structure "
+
+The Law of Demeter:
+
+    says "a module should not know about the innards of the objects it manipulates"
+
+    More precisely, the Law of Demeter says that a method f of a class C should only call
+    the methods of these:
+
+     C
+     An object created by f
+     An object passed as an argument to f
+     An object held in an instance variable of C
+
+    The method should not invoke methods on objects that are returned by any of the
+    allowed functions. In other words, talk to friends, not to strangers.
+    The following code3 appears to violate the Law of Demeter (among other things)
+    because it calls the getScratchDir() function on the return value of getOptions() and then
+    calls getAbsolutePath() on the return value of getScratchDir().
+
+    "final String outputDir = ctxt.getOptions().getScratchDir().getAbsolutePath();"
+
+Train Wreeks 
+
+    This kind of code is often called a train wreck because it look like a bunch of coupled train
+    cars. Chains of calls like this are generally considered to be sloppy style and should be
+    avoided [G36]. It is usually best to split them up as follows:
+    Options opts = ctxt.getOptions();
+    File scratchDir = opts.getScratchDir();
+    final String outputDir = scratchDir.getAbsolutePath();
+
+    If they are Data structure Demeter rule does not apply
+    If they are Objects then Demeter rules apply 
+
+Hybrids :
+
+    Do not even use both Object oriented and Data Structure in a program as makes it hard to add
+    functions and also hard to add new data structure in it.
+
+Hiding Structure :
+
+    The Main use of Object Oriented program is to hide its implementation and to provide 
+    one of the two states 
+
+    It should return the information of the Object 
+    It should modify the object and return it with that modification 
+
+    what if we  want to get an absolute path of that object isn't it like asking the 
+    internal detail of the objects with violates the law of Demeters 
+
+    lets see the intent of getting absolute path is  to create a scractch file of a given 
+    name 
+
+      so, what if we told the ctxt object to do this? 
+      BufferedOutputStream bos = ctxt.createScratchFileStream(classFileName);
+
+      Now the Internal data in the object is still hidden and not violating the law of 
+      dementer
+
+Data transfer Objects :
+
+    They are usually classes with public variables and no functions in it .They are very useful
+    structure espesially when communicating with the database 
+
+    They are first series in translating a data in a database into an object in a application 
+    code 
+
+Active Records:
+
+    Active Records are the special form of DTO's they have public variables and also 
+    certain navigational methods like find ,save .
+    They are direct translatioins from database Tables or other data sourcecs
+
+    We should always treat them like Data structure and if we want to add business rules 
+    for it we must add a separate object for it .
+
+Conclusion :
+
+    Objects expose behavior and hide data. This makes it easy to add new kinds of objects
+    without changing existing behaviors. It also makes it hard to add new behaviors to existing
+    objects. Data structures expose data and have no significant behavior. This makes it easy to
+    add new behaviors to existing data structures but makes it hard to add new data structures
+    to existing functions
