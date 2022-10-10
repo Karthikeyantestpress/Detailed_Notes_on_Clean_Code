@@ -5,7 +5,7 @@ Intro :
 
 Use exceptions rather than error code :
 
-    Always prefer to use erro handling usig try/catch block instead of an error code as we should 
+    Always prefer to use error handling usig try/catch block instead of an error code as we should 
     check for the error after calling it in error code and we may forget once so better go to 
     error handling it also separates the good code from the error code .
 
@@ -31,7 +31,45 @@ Provide Context with exceptions :
 
 Define Exception classes in terms of caller needs :
 
-We can clarify error by their source 
-if it is by the file or program error or system requirement or a program error
+    We can clarify error by their source 
+    if it is by the file or program error or system requirement or a program error
 
-Hower our most important concern should be how they are caught 
+    Our most important concern on the error handling should be" how they are caught 
+
+    We can wrap the third party app into a class to give our own exceptions for it and
+    to handle the errors 
+
+    Wrapping also makes it easier to mock out third-party calls when you are
+    testing your own code.
+
+Define the Normal flow :
+
+    Some times we may not want to abort a code by exception 
+
+    eg : if we are checking the total price of an employee included with meals price in it
+    we can return the complete total of expence of the employee .
+
+    Instead the meal expense is not added we can return a meal per day to employee 
+
+    In this cases we should not handle it like an exception instead we can make a special case
+    and return the per day meal as default in total if there is no meal expence in the account .
+
+    SPECIAL CASE PATTERN [Fowler]. You create a class or configure an object so that it handles a 
+    special case for you. When you do, the client code doesn’t have to deal with exceptional 
+    behavior. That behavior is encapsulated in the special case object.
+
+
+Do Not return Null : 
+
+   Do not return  a Null valur in a program as it only leads to Null pointer error and we should
+   handle them at some point 
+
+Do not pass Null ass an argument :
+
+Again we may have to handle the null pointer exception if we pass Null as a argument in a 
+program .
+
+So never return or pass a null value in a program 
+
+
+

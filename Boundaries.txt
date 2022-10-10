@@ -1,0 +1,57 @@
+Intro :
+
+    We do not often control all softwares in our system,
+    some times we use third party apps in our system 
+    Other times we depend on our own team to create a componunants 
+    or subsystems for us .
+
+    In this chapter we will see the practice and techiniques to keep our software clean 
+
+Using-Third Party Code :
+
+    Providers of a third party app or a software they provide broad usabiiity 
+    where as we may need only a particular portion of it this tension can causes a 
+    problem in a boundaries of our system.
+
+    Eg Consider java.utill.map it contains clear() to delete but if we want to use this users 
+    may delete them with this clear method 
+
+    Also if we want only sepcific types to be added it is also not possible as the map method 
+    contains all the methods to change the data 
+
+    If you use a boundary interface like Map, keep it inside the class, or close family
+    of classes, where it is used. Avoid returning it from, or accepting it as an argument to,
+    public APIs
+
+
+Exploring and Learning boundaries :
+
+    We must know completely about our third party apps before using them or else if we get an error in 
+    our application we may not know which causes the error if it is from our code or if it is from 
+    the third party api 
+
+    so to avoid this confusions we may need to make a test cases on our third party aps to see
+    if it passes all the tests that we needed to use 
+
+    Jim Nukrik calls such a test "Learning test"
+
+Learning Tests are better than free :
+
+    Learing test are always better than to face them so we must make sure to make a learning test
+    to learn about the third party app like wise it is also usefull if the third party app gets 
+    updated as we can check to see if the test still passes or we can modify the test as per the 
+    needs.
+
+Using code that does not yet exists :
+
+We can create our own code with that of third party api if the api does not have the 
+fy=unctionality that we needed it to do 
+
+
+Clean Boundaries :
+
+A good software is the one that accomodates change 
+so we must use make sure our code is more dependant from the third party api 
+and also make sure that wa test the third party api so that it does not fails 
+
+
