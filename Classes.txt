@@ -1,4 +1,4 @@
-Intro :
+Introduction 
 
     This chapter is about writing a clean code with the organized way using classes 
 
