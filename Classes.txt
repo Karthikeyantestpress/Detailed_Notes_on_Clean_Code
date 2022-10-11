@@ -1,0 +1,65 @@
+Intro :
+
+    This chapter is about writing a clean code with the organized way using classes 
+
+Class Organization :
+
+    A class should start with Public variables 
+    Then Privte variables 
+    Then instance variables 
+
+    Public functions should follow these list of variables 
+    This gives the program read like a newspaper article
+
+Encapsulation :
+
+    Losing encapsultaion is always a last resort even if we want a protected method to be accessed by
+    a test classes 
+
+Classes should be small :
+
+    Like funtions classes also should be small but like function we are not mentioning the small in 
+    the line but a class must be small in its responsibility and the Name of the class should tell 
+    us that what responsibility it fullfill.
+
+The Single responsibility Principle :
+
+    This principle states that a class or module should have only one reason to change 
+
+    We want our systems to be composed of many small classes, not a few large ones. Each small 
+    class encapsulates a single responsibility, has a single reason to change, and collaborates 
+    with a few others to achieve the desired system behaviors.
+
+Cohesion :
+
+    A class should have small number of instane variables and all those variables should be used in
+    the methods of these classes 
+
+    The  maxium cohesion a method with variable is the maxium they are co-depended and logical 
+
+Maintaining Cohesion result in many small classes : 
+
+    When a class loses cohesion ,split them  
+
+    So breaking a larger functions into a smaller one also helps uss to create several small classes
+    as well
+
+Organization for Change :
+
+    In a Clean system we organize our classes so as to reduce the changes 
+
+    If we open a class and make changes in it we must retest them 
+
+Isolating from changes :
+
+    As long as the needs gets changed the code will also be changed as per needs 
+    A Concreate class contains the implementation details 
+    An abstract class only contains the concepts only
+
+    So making a change in a concreate class makes it risk 
+    So we can crerate an interface or abstract classes to handle this changes  
+
+    Dependency Inversion Principle states that our class should depend on an abstract not 
+    concrete
+
+
