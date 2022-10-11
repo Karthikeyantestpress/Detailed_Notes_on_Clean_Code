@@ -1,0 +1,84 @@
+Intro :
+
+    This chapter is about the Test Driven Development to the code so that the code passes in 
+    every test possibility 
+
+Uncle bob's Test policies :
+
+    A Test must make sure that every nook and crank of the code worked as expected
+    He isolates the code from the operting system rather than just calling the standard functions 
+    Test to make sure the test fails first and then work on it untill the test pass
+    This Test must be convenience to run for anyone else who uses the code 
+
+Law to be followed for a good test ;
+
+    First Law :
+    You may not write production code until you have written a failing unit test.
+    Second Law :
+    You may not write more of a unit test than is sufficient to fail, and not compiling is failing.
+    Third Law :
+    You may not write more production code than is sufficient to pass the currently failing test.
+
+Keep the Test Clean :
+
+    "Having a Dirty test is equivelant to not having a test cases"
+
+    A test Code that works alone is not a good test code 
+    It must  be also readable for anyone like production code 
+
+    Like a production code a messy in a test code gives a large impact Without a good test code we may 
+    not know if our code works as expected when changes made in production code 
+
+    So a clean test code is as important as production code  
+
+Test enables the ilities :
+
+    If we have a good test we do not have to fear changing the code .
+    Without test evey change in code is possibily a bug 
+
+Clean Test :
+
+    Readability plays an important role in the testing 
+    Perhaps it is more important in the unit test than in the production code 
+
+   In test we want to say a lot with the less codes 
+
+   A clean test must be crisp and clear so that anyone who reads them can understnad it easily 
+   It must be also not overwhelmed by details 
+
+Domain specific Testing language :
+
+    A good programmer refactor their code more Succinct and expressive form 
+
+Single Concept per Test :
+ 
+    Like production code we should test single concept in each functions 
+
+F.I.R.S.T :
+
+A clean test follows five Rules
+
+Fast : The Test should be fast .When Test is slow we won't want to run  them frequently 
+so the code rots if our it is not tested frequently so better make a test that is fast 
+
+Independent : A test should  not depend on anyother test cases and must run freely and
+separately 
+
+Repeatable : A test should be runnable in any enviroment even without a network
+
+Self-Validation : A Test should have a boolean output which is either pass or fail 
+We should not manually check the files instead it should self validate and provide 
+a success or failure result  
+
+TImely : Test should be always  writteen a head of the production code 
+ if we write a production code first it may be hard for some part of a code to
+test 
+
+
+
+
+
+
+
+
+
