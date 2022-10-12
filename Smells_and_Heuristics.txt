@@ -1,0 +1,312 @@
+Intro :
+
+    techiques for a Clean Code 
+
+Comments 
+
+    C1:Inappropriate information : A comments should be reserved to techinical notes and design and should 
+    not have any unwanted commets such  as author name ,coder name 
+
+    C2:Obsolete Comments : A comment that is no longer usefull or needed is an obsolete comments 
+    codes get updated also a comment for that code should be updated or else it become irrelevent
+    and an obsolete comment
+
+    C3:Redundant Comments : A Comment is redundant if it does not provide any information other 
+    than what already known from the code thiis is a Redundant comment and should be avoided.
+
+    C4:Poortly written comments : A poor comment is worst than having no comment atall so make sure 
+    to write a clear comment 
+
+    C5:Commented_out_code : They are worst of the comment we should never comment a code in it also if  
+    we see some ones code with commented out code we should remove them .
+
+Environment :
+
+    E1:Build requires more than one step :
+
+    Building a project should be a single trivial operation. You should not have to check many
+    little pieces out from source code control. You should not need a sequence of arcane commands 
+    or context dependent scripts in order to build the individual elements. You should
+    not have to search near and far for all the various little extra JARs, XML files, and other
+    artifacts that the system requires. You should be able to check out the system with one simple 
+    command and then issue one other simple command to build it.
+
+    svn get mySystem
+    cd mySystem
+    ant all
+
+    E2:Test Requires more than one steps :
+
+    We should be able to run all the unit tests just with one  commands 
+
+Functions  :
+
+    F1:Too Many Arguments :
+
+    To Many argumenet should be avoided in a function and a function should have only
+    one,two or atmost three arguuments
+
+    F2:Output Arguements :
+
+    Output srguments are worst as the readers expect output of a method in return so it takes 
+    a double take for the readers to understand .So the  output Arguments should be avoided
+
+    F3:Flag Arguments : 
+
+    Passing Boolean as an Argument is  the  worst idea as it does one thing when true and other when 
+    it is  false so they should be avoided
+
+    F4:Dead Functions :Method that are never called should be discarded as theu are dead functions  
+    that is  of no use 
+
+General 
+
+    G1 : Multiple Languages in one Source file  :
+
+    We should  avoid using multiple programming languages in a single source file so we should always 
+    use only one language in a source file if not possible atleast try to minimize the language in a 
+    Source file 
+
+    G2 :Obvious behaviour is unimplemented :
+
+    So a function must clearly say its obvious behaviour in it or else if the reader could not 
+    able to clearly understand and they tend to read the details for the code.
+
+    G3 : Incorrect behavious at the boundaries :
+
+    Never just belive on the instinct that the function/code will work perfectly 
+    check all possible boundaries and write a  test case that proof that our code is
+    working perfectly 
+
+    G4 :  Never Override Safeties :
+
+    A Chrnoboyal disaster is caused just because of overridding a safty to run an experiment
+    and we all know its impact now  so never override a safety in a code as it leads to deadly risk
+
+    G5 : Duplication :
+
+    Every time we see a duplicate it states that we missed an oppurtanity for abstraction 
+    By abstracting the duplicate even other programmer can use this facility to avail the code 
+    A repeative switch case or if statements can be replaced with the polymorphysm to avoid 
+    duplication 
+
+    A module  that shares the similar algormithm but do not share a same code  is  also a 
+    duplicate and should be addressed by a "stratergy pattern ".
+
+    A Stratergy Pattern is a pattern in which user can select their needs in run time of the 
+    application 
+
+    Object Obrientation concept is itself a stratergy for Eliminating the Duplicates
+
+    G6 : Code at wrong level of Abstraction :
+
+    We must make sure that the code is correctly abstracted as per the level .we must not use the 
+    implementation on the base class which is high level abstracted it should be dedrived and used 
+    in dervied classes 
+
+    The point is Code at wrong level of abstrarction makes it worst to use 
+
+    G7 : Base classes Depending on derviatives :
+
+    A base class should no nothing about the implementation in dervied class .This makes us 
+    easy to redeploy wiithout having to redeploy the base components 
+
+    G8: Too much Information :
+
+    A Well defined module have small interface that alows use to do a lots of things 
+    A poor defined module have wide and deep interface that forces us to do lots of 
+    guesture to get a simple thing done .
+
+    A wll defined interface does not offer much functions to do a thing 
+    A poorluy definedd interface does have multiple functions to do a thing 
+
+    Good software developers learn to limit what they expose at the interfaces of their
+    classes and modules. The fewer methods a class has, the better. The fewer variables a function
+    knows about, the better. The fewer instance variables a class has, the better. 
+
+    Keep "coupling low by limiting information like class with less functions less instance 
+    variables 
+
+    G9 : Dead Code : A Dead Code is a code that is simply of no use in a program 
+    code such as an condition from if statement that never implemented .Error handling 
+    in catch block but never occurs that error 
+
+    so these codes should be avoided and deleted from the system 
+
+    G10 : Vertical Separation :
+
+    Variables and Functions should be defined where they are used 
+    A Local Variable should be declined just above their first usage with less verical scope
+    A private function should be defined just below their first usage
+
+    G11 : Inconsistency :
+
+    If we do something in a certain way do all the same  conceptual thing in same way 
+
+    If within a particular function you use a variable named response to hold an
+    HttpServletResponse, then use the same variable name consistently in the other functions
+    that use HttpServletResponse objects. If you name a method processVerificationRequest,
+    then use a similar name, such as processDeletionRequest, for the methods that process
+    other kinds of requests.
+
+    G12 :Clutter :
+
+    Varriables that aren't used 
+    Functions that never called 
+    Codes that aren't used should be deleted as they are of no uses
+
+    G13 : Artificial Coupling :
+
+    Two module that are of no use when connected no be connected as they shows the privacy 
+    from one to other without any use 
+
+    G14 : Feature Envy(Jelous)
+
+    Method of one class should not be intrested in Methods of another class
+
+    G15 : Selector Arguments :
+
+    Selector argument are the functions with argument that performs more than one thing 
+    and must be seperated 
+
+    Eg : we should not pass boolean as an argument in a function as it does one thing when it 
+    is true and does one thing when it is false so we should better split it into two functions
+
+    G16 : Obscured Intent : 
+
+    A code should not tell the intent of the author we should not use Hungarian Notation 
+    in a Code 
+
+    G17 : Misplaced Responsibilty :
+
+    A Behaviour of an object should be placed in right time and clear Name for the behaviour 
+    that tells the intent of the function 
+
+    G18 : In appropriate Static : 
+
+    In general you should prefer nonstatic methods to static methods. When in doubt,
+    make the function nonstatic. If you really want a function to be static, make sure that there
+    is no chance that you’ll want it to behave polymorphically.
+
+    G19 : Use Explainatory Variables :
+
+    A Variable must tell the intent of its Name and should be readable and understandable by 
+    any programmer 
+
+    G20 : Function Name should say what say do :
+
+    A Function Name should be in a descriptive way that tells what responsibility is for 
+    that Function 
+
+    G21 : Understand the Algorithm :
+
+    A function must be refactored for the clean and best underrstanding 
+    Passing a Test is alone not enought that says the function "works"
+    We must make sure it is tested correctly and passed as per the needs 
+
+    G22 : Make Logical Dependencies Physical :
+
+    If one module depends upon another, that dependency should be physical, not just logical.
+    The dependent module should not make assumptions (in other words, logical dependencies) about 
+    the module it depends upon. Rather it should explicitly ask that module for allthe information 
+    it depends upon.
+
+    G23 : Prefer Polymorphism to if/else or switch case :
+
+    A Switch or If statement can explicity grow if new datas added affecing its implementation 
+    So they are to be used as a polymorphic objects 
+
+    G24 : Fellow Standard Conventions :
+
+    A Team of coders should follow a standard conventions on their codes
+
+    G25 : Replace Magic Numbers with Named Constant : 
+
+    Do not use strings and numbers without Intent revealing Named Constants 
+    Always hide them in a Named constant and make sure that Name is well Named
+
+    G26 : Be Precise :
+
+    If you are working on a code make sure  to thing of all possible results and make sure to 
+    test them all untill they all pass
+
+    so if we get one match dont be  confidence that is the only match unless check and confirmed 
+
+    G27 : Structure  Over Convention
+
+    We can choose structure over convention which is if we use an abstract method we dont 
+    want the users to know the  inards on that method so at that time if we name  with intention
+    revealing it is not good .
+
+    G28 : Encapsulate Conditionals:
+
+    Make your condition more Precise (Clear ) so that it can be understood
+
+    G29 Avoid Negative conditionals :
+
+    Never use a negative condition in a statement
+
+    G30 :Function should do one thing :
+
+    A function must do one thing if not extract a function from it untill it does only one thing 
+
+    G31 :Hidden Temporal Couplings : 
+
+    Sometimes method depend on other method and we should code them in consequtive order 
+    and pass the result of pne method as an argument to other method to make them couping 
+
+    G32 : Don't be Arbitrary :
+
+    Our code should communicate the reason of its structure 
+
+    G33 : Encapsulate Boundadary Conditions :
+
+    Make sure bounary condition are wrapped up in a Variables 
+
+    G34 : A function should descend only one level of abstraction :
+
+    Make one level of abstraction to functions to give a clear understanding on them and make 
+    sure it does only one thing 
+
+    G35 :Keep configurable datas at high level :
+
+    A default or configurative value should be at high level of abstraction and passed as an
+    argument in low level 
+
+    G36 :Avoid Transitive Navigaion :
+
+    Detail of a cohesive modules should never know about their cohesive modules which is know
+    your friend not your friends friend 
+
+Java :
+
+    J1 : Avoid long immport list by Wildcards
+    J2 : Don't inherit constants 
+    J3 : Constants vs Enums
+
+Names :
+
+    N1 : Choose Descriptive Names 
+    N2 : Choose Names at Appropriate Level of Abstraction
+    N3 : Use standard Nomenclature Name
+    N4 : Unambigous Names  -Make long and descriptive meaning full name 
+    N5 : Use Long Names for long Scope 
+    N6 : Avoid Encoding 
+    N7 : Names Should Describe Side-Effects 
+
+Tests :
+
+    T1 : Insufficient Tests -A Test should be sufficient enough to validate all parts of the code
+    T2 : Use Coverage Tools -Use Coverage tools to check the gaps in testing 
+    T3 : Don't Skip Trival Test : They are easy to write and their documentary value is higher than the cost to produce
+    them
+    T4 : An ignored Test is a question about Ambiguaty :An Ignore test is a risk in code 
+    T5 : Test Boundary conditions 
+    T6 : Exhaustively Test your bugs :A single bug can cover a certain part of code test all parts 
+    to make sure it is bug free
+    T7 : Patterns of failure are Revealing :  Test cases ordered well will reveal patterns of failure.
+    T8 : Test Coverage patterns can be Revealing : Test cases ordered well will reveal patterns of 
+    failure.
+    T9 : Tests should be fast : 
+
+
